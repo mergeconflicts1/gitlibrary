@@ -1,29 +1,63 @@
 # restore
 
-### Git Restore Command
+### Git Restore Command: Overview and Usage
 
-The `git restore` command is used to undo changes in the working directory or the staging area. It offers a more focused approach to reapplying the state of the codebase, specifically catering to the needs of adjusting and amending changes.
+The `git restore` command is a versatile tool in Git, introduced in version 2.23, that allows developers to undo changes in the working directory and the staging area. It provides a safer and more explicit alternative to `git reset` for discarding changes, helping manage different restoration scenarios effectively.
+
+#### Basic Explanation
+
+* **Purpose**: `git restore` is used to revert changes made to files in the working directory or the staging area (index) to their last committed state. It allows you to selectively discard edits or unstage files without affecting the commit history.
+* **Functionality**: This command helps manage changes by providing options to restore files from specific commits, branches, or tags, making it an essential tool for resetting files to a previous state.
 
 #### Commonly Used Options
 
-* **`--source=<tree>`**: Specify the tree to restore from.
-* **`--staged`**: Restore changes to the staging area (index).
-* **`--worktree`**: Restore changes to the working directory.
-* **`--patch`**: Interactively select portions of the file to restore.
+* **Restore Working Directory Changes**:
+  * `git restore <file>`: Reverts changes in the specified file back to its last committed state. This discards any uncommitted local changes.
+* **Unstage Files**:
+  * `git restore --staged <file>`: Removes the specified file from the staging area but retains any changes in the working directory.
+* **Restore Both Staging Area and Working Directory**:
+  * `git restore --source=HEAD --staged --worktree <file>`: Reverts both the staging area and working directory for the specified file to its state at the last commit.
+* **Restore from Specific Commit**:
+  * `git restore --source=<commit> <file>`: Restores a file to its state at a specific commit, identified by its hash or reference.
+* **Interactive Mode**:
+  * `git restore --patch <file>`: Allows you to interactively select hunks of changes to be restored, providing fine-grained control over what gets reverted.
 
-#### Example Usage
+#### Practical Example
 
-```bash
-# Restore changes to a specific file in the working directory
-git restore path/to/file.txt
+Here's how you might use `git restore` in a typical workflow:
 
-# Restore changes to the staging area for a specific file
-git restore --staged path/to/file.txt
+1.  **Revert Changes in a File**: Suppose you made unwanted changes to `example.txt` and want to discard them:
 
-# Interactively restore parts of the file
-git restore --patch path/to/file.txt
-```
+    ```bash
+    git restore example.txt
+    ```
 
-These examples demonstrate how you can leverage the `git restore` command to manage changes meticulously, whether it's reapplying specific adjustments, modifying staged content, or interactively selecting changes to modify.
+    This command reverts `example.txt` back to its last committed state.
+2.  **Unstage a File**: If you staged `example.txt` by mistake and want to unstage it:
 
-For more information, visit the [official Git documentation](https://git-scm.com/docs/git-restore).
+    ```bash
+    git restore --staged example.txt
+    ```
+
+    This removes the file from the staging area but keeps your local modifications intact.
+3.  **Restore All Changes in Working Directory**: To revert all modified files in your working directory:
+
+    ```bash
+    git restore .
+    ```
+
+    This command resets all files back to their last committed states without affecting staged changes.
+4.  **Restore from a Specific Commit**: If you need to revert a file to its state in a specific commit (e.g., commit `a1b2c3d`):
+
+    ```bash
+    git restore --source=a1b2c3d example.txt
+    ```
+5.  **Interactive Restoration**: For more control over which parts of a file are restored, use interactive mode:
+
+    ```bash
+    git restore --patch example.txt
+    ```
+
+    This allows you to selectively choose which changes to revert.
+
+By mastering `git restore`, developers can efficiently manage their codebase, ensuring that only intended changes are retained while unwanted modifications are safely discarded. This command is particularly useful for maintaining clean and organized repositories during active development.
