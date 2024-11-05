@@ -19,5 +19,5 @@
   * [rm](basic-snapshotting/rm.md)
   * [mv](basic-snapshotting/mv.md)
 * [Branching and Merging](branching-and-merging/README.md)
-  * [Page](branching-and-merging/page.md)
+  * [branch](branching-and-merging/page.md)
   * [Page 1](branching-and-merging/page-1.md)
