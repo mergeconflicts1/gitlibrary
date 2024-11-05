@@ -66,3 +66,6 @@ Here's how you might use `git status` in a typical workflow:
     The output should indicate that there is nothing to commit and the working tree is clean.
 
 By regularly using `git status`, developers can maintain an accurate understanding of their project's state, ensuring that only intended changes are committed and helping to prevent errors in version control workflows.
+
+<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td><a href="https://www.udemy.com/course/git-the-complete-guide-to-beginners-and-experienced-users/?referralCode=35B132FCB064AEB4EB91">Git – The Complete Guide to Beginners and Experienced Users</a></td><td></td><td></td><td><a href="../.gitbook/assets/CleanShot-2024-09-05-at-20.04.32 (2).png">CleanShot-2024-09-05-at-20.04.32 (2).png</a></td></tr></tbody></table>
+

@@ -61,3 +61,6 @@ Here's how you might use `git restore` in a typical workflow:
     This allows you to selectively choose which changes to revert.
 
 By mastering `git restore`, developers can efficiently manage their codebase, ensuring that only intended changes are retained while unwanted modifications are safely discarded. This command is particularly useful for maintaining clean and organized repositories during active development.
+
+<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td><a href="https://www.udemy.com/course/git-the-complete-guide-to-beginners-and-experienced-users/?referralCode=35B132FCB064AEB4EB91">Git – The Complete Guide to Beginners and Experienced Users</a></td><td></td><td></td><td><a href="../.gitbook/assets/CleanShot-2024-09-05-at-20.04.32 (2).png">CleanShot-2024-09-05-at-20.04.32 (2).png</a></td></tr></tbody></table>
+
