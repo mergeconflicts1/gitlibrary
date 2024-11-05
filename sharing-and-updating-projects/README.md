@@ -10,8 +10,8 @@ In collaborative development environments, keeping your local repository synchro
 
 #### Fetching and Pulling Updates
 
-* **`git fetch`**: This command downloads commits, files, and references from a remote repository into your local repository without altering your working directory. It allows you to review changes before integrating them into your local branch, making it a safe way to update your local metadata with the latest state of the remote repository\[1]\[2].
-* **`git pull`**: Combines the actions of `git fetch` and `git merge` (or `git rebase`) to automatically integrate changes from a remote repository into your current branch. This command is useful for quickly synchronizing your local branch with the remote but can lead to merge conflicts if not managed carefully\[3]\[5].
+* **`git fetch`**: This command downloads commits, files, and references from a remote repository into your local repository without altering your working directory. It allows you to review changes before integrating them into your local branch, making it a safe way to update your local metadata with the latest state of the remote repository.
+* **`git pull`**: Combines the actions of `git fetch` and `git merge` (or `git rebase`) to automatically integrate changes from a remote repository into your current branch. This command is useful for quickly synchronizing your local branch with the remote but can lead to merge conflicts if not managed carefully.
 
 #### Pushing Changes
 
