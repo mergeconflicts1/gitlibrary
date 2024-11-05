@@ -20,4 +20,4 @@
   * [mv](basic-snapshotting/mv.md)
 * [Branching and Merging](branching-and-merging/README.md)
   * [branch](branching-and-merging/page.md)
-  * [Page 1](branching-and-merging/page-1.md)
+  * [checkout](branching-and-merging/page-1.md)
