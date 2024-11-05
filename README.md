@@ -40,5 +40,5 @@ By understanding and using these commands effectively, developers can efficientl
 
 ### Learn more about
 
-<table data-view="cards"><thead><tr><th></th><th></th><th></th></tr></thead><tbody><tr><td><a href="documentation/getting-and-creating-projects/init.md"><strong>init</strong></a></td><td></td><td></td></tr><tr><td><a href="documentation/getting-and-creating-projects/clone.md"><strong>clone</strong></a></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th></th><th></th></tr></thead><tbody><tr><td><a href="documentation/getting-and-creating-projects/init.md"><strong>init</strong></a></td><td>The <code>git init</code> command is a foundational tool in Git, used to create a new Git repository.</td><td></td></tr><tr><td><a href="documentation/getting-and-creating-projects/clone.md"><strong>clone</strong></a></td><td>The <code>git clone</code> command is a fundamental operation in Git, used to create a local copy of a remote repository.</td><td></td></tr></tbody></table>
 
