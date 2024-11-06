@@ -40,3 +40,11 @@
   * [diff](patching/diff.md)
   * [rebase](patching/rebase.md)
   * [revert](patching/revert.md)
+
+## Book
+
+* [2. Delta Model and Snapshot Model](book/2.-delta-model-and-snapshot-model.md)
+
+## Concepts
+
+* [The Evolution of Version Control Systems](concepts/the-evolution-of-version-control-systems.md)
